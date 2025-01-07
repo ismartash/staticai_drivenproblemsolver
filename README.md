@@ -2,7 +2,8 @@
 
 An intelligent math problem solver powered by Google's Gemini AI model. The app provides users with a step-by-step solution to math problems by processing images from the camera or uploaded images. The AI analyzes and provides detailed feedback for each step in the solution.
 
-# check project live at  https://staticai-drivenproblemsolver.onrender.com
+# check project live at
+  https://staticai-drivenproblemsolver.onrender.com
 
 ## Features
 
