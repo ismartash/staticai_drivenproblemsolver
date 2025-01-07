@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Solver</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Math Problem Solver</h1>
+        
+        <div id="main-buttons" class="button-container">
+            <button class="primary-btn" onclick="startCamera()">Use Camera</button>
+            <button class="secondary-btn" onclick="document.getElementById('file-input').click()">Upload Image</button>
+            <input type="file" id="file-input" hidden accept="image/*" onchange="handleImageUpload(event)">
+        </div>
+
+        <div id="camera-container">
+            <video id="video" autoplay playsinline></video>
+            <div class="button-container">
+                <button class="primary-btn" onclick="capture()">Capture</button>
+                <button class="switch-btn" onclick="switchCamera()">Switch Camera</button>
+                <button class="back-btn" onclick="backToMain()">Back</button>
+            </div>
+        </div>
+
+        <div id="result-container">
+            <div id="solution"></div>
+            <div class="button-container">
+                <button class="back-btn" onclick="backToMain()">Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
