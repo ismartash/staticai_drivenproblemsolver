@@ -49,7 +49,7 @@
 
         async function processMathProblem(imageData) {
             try {
-                const response = await axios.post('/process-math', { image: imageData });
+                const response = await axios.post('http://localhost:3014/api/process-math', { image: imageData });
                 displayResult(response.data);
             } catch (err) {
                 console.error('Error processing image:', err);
