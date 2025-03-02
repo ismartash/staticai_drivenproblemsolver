@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import dotenv from 'dotenv'; // Load .env variables
-dotenv.config();  // Ensure .env is loaded
+import dotenv from 'dotenv';
+dotenv.config(); 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 export const getsolutionash=async(req,res)=>{
     try {

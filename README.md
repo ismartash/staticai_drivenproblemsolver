@@ -37,6 +37,7 @@ Before you begin, ensure you have met the following requirements:
     ```bash
     git clone https://github.com/ismartash/staticai_drivenproblemsolver.git
     cd aidrivenproblemsolver
+    cd backend
     ```
 
 2. **Install dependencies**:
